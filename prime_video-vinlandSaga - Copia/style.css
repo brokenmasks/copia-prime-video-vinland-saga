@@ -1,0 +1,709 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(imgs/thor.jpg);
+    background-repeat: no-repeat;
+    background-position:  top right;
+    background-size: cover;
+    overflow: hidden;
+}
+.navMenuCenter{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navMenuCenterCenter{
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 1207.66px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    background: #00050d;
+    font-weight: 600;
+}
+.logo{
+    margin: 0 48px 0 48px;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+.logo img{
+    height: 27px;
+    width: 144px;
+}
+.navMenu .navMenuUl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.navMenu .navMenuUl li{
+    display: flex;
+    height: 65px;
+    align-items: center;
+    font-size: 18px;
+    padding: 0 16px;
+    cursor: pointer;   
+    color: #aaa;
+    white-space: nowrap;
+    transition: color 200ms ease-in;
+}
+.navMenu .navMenuUl li span{
+    display: grid;
+    place-content: center;
+    height: 100%;
+    transition: transform 200ms ease-in-out;
+}
+
+
+.minhaArea, .navMenuCenterCenter, .loja, .inicio{
+    position: relative;
+}
+
+ul li span i{
+    font-size: 29px;
+}
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 48px;
+    margin-right: 0.3em;
+    height: 100%;
+    width: 60px;
+}
+.pesquisa:hover{
+    background: #191e25;
+}
+i.lupa{
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+}
+.menuContas{
+    position: relative;
+}
+.menuContas .conta .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    white-space: nowrap;
+}
+.menuContas .conta .user:hover{
+    background: #191e25;
+}
+.user p{
+    color: #aaa;
+    font-size: 18px;
+    cursor: pointer;
+    padding-right: 12px;
+}
+.user img{
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+
+
+/* NAVIGATION MENUS HOVERS */
+
+
+    /* CONFIGURAÇÕES GERAIS DAS Li's     */
+
+        .navMenu ul li:hover{
+            background: #191e25;
+            color: #fff;
+        }
+        .navMenu ul li:hover > span:nth-child(2){
+            transform: rotate(180deg);
+            transition: transform 200ms ease-in-out;
+        }
+
+    /* FINAL CONFIGURAÇÕES GERAIS DAS Li's */
+
+
+    /* INÍCIO MENU HOVER */
+
+        .inicio:hover > .inicioHover{
+            display: block;
+        }
+        .inicioHover{
+            display: none;
+            position: absolute;
+            top: 65px;
+            left: 0;
+            width: 100%;
+            background: #191e25;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 8px 2px rgba(0, 5, 13, .5);
+        }
+        .inicioHover a{
+            display: block;
+            padding: 12px;
+            font-size: 18px;
+            color: #aaa;
+            text-decoration: none;
+            text-align: left;
+        }
+        .inicioHover a:hover{
+            color: #333;
+            background: #fff;
+        }
+        .inicioHover a:nth-child(4){
+            border-radius: 0 0 12px 12px;
+        }
+
+    /* FINAL INÍCIO MENU HOVER */
+
+
+    /* LOJA MENU HOVER */
+
+        .loja:hover > .lojaHover{
+            display: block;
+        }
+        .lojaHover{
+            display: none;
+            position: absolute;
+            top: 65px;
+            left: 0;
+            width: 100%;
+            background: #191e25;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 8px 2px rgba(0, 5, 13, .5);
+        }
+        .lojaHover a{
+            display: block;
+            padding: 12px;
+            font-size: 18px;
+            color: #aaa;
+            text-decoration: none;
+            text-align: left;
+        }
+        .lojaHover a:hover{
+            color: #333;
+            background: #fff;
+        }
+        .lojaHover a:nth-child(3){
+            border-radius: 0 0 12px 12px;
+        }
+
+    /* FINAL LOJA MENU HOVER */
+
+
+    /* CATEGORIAS MENUS HOVER */
+
+        .categorias:hover > .categoriasHover{
+            display: block;
+        }
+        .categoriasHover{
+            display: none;
+            position: absolute;
+            top: 65px;
+            left: 0;
+        }
+        .categoriasHoverFlex{
+            display: flex;
+            justify-content: space-around;
+            height: 370px;
+            width: 1207.66px;
+            border-radius:0 0 12px 12px;
+            background: #191e25;
+            box-shadow: 0 4px 8px 2px rgba(0, 5, 13, .5);
+            padding: 0;
+        }
+        .categoriasHover .generos{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            height: 370px;
+            width: 432.06px;
+            padding: 12px 0 12px 24px;
+        }
+        .categoriasHover .categoriasHoverFlex .title{
+            font-size: 20px;
+            color: #fff;
+            font-style: bold;
+            font-weight: 700;
+            padding: 12px 0;
+            height: unset;
+        }
+        .categoriasHover .generos .categoriasUlGeneros{
+            width: 100%;
+            column-count: 2;
+        }
+        .categoriasHover .generos .categoriasUlGeneros li{
+            height: unset;
+            padding: 0;
+        }
+        .categoriasHover .generos .categoriasUlGeneros li a{
+            font-size: 18px;
+            padding: 12px;
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .categoriasHover .generos .categoriasUlGeneros li:hover{
+            background: #fff;
+            border-radius: 12px;
+        }
+        .categoriasHover .generos .categoriasUlGeneros li:hover > a{
+            color: #333;
+        }
+
+
+
+        .categoriasHover .colecoes {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 340.33px;
+            padding: 12px 24px 12px 24px;
+        }
+        .categoriasHover .colecoes .categoriasUlColecoes li{
+            height: unset;
+            padding: 0;
+        }
+        .categoriasHover .colecoes .categoriasUlColecoes li a{
+            font-size: 18px;
+            padding: 12px;
+            color: #aaa;
+            text-decoration: none;
+        }
+        .categoriasHover .colecoes .categoriasUlColecoes li:hover{
+            background: #fff;
+            border-radius: 12px;
+        }
+        .categoriasHover .colecoes .categoriasUlColecoes li:hover > a{
+            color: #333;
+        }
+
+    /* FINAL CATEGORIAS MENUS HOVER */
+
+    
+
+    /* MINHA AREA MENU HOVER */
+
+    .minhaArea:hover > .minhaAreaHover{
+        display: block;
+    }
+    .minhaAreaHover{  
+        display: none;  
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        border-radius:0 0 12px 12px;
+        background: #191e25;
+        box-shadow: 0 4px 8px 2px rgba(0, 5, 13, .5);
+    }
+    .minhaAreaHover a{
+        display: block;
+        text-align: left;
+        font-size: 18px;
+        color: #aaa;
+        text-decoration: none;
+        padding: 12px;
+    }
+    .minhaAreaHover a:hover{
+        background: #fff;
+        color: #333;
+    }
+    .minhaAreaHover a:nth-child(3){
+        border-radius: 0 0 12px 12px;
+    }
+
+    /* FINAL MINHA AREA HOVER */
+
+
+
+/* END OF NAVIGATION MENUS HOVERS */
+
+
+
+/* CONTAS MENU HOVER */
+
+    .hoverUser{
+        display: none;
+        position: absolute;
+        right: 0;
+        background: #000;
+        height: 430px;
+        width: 555px;
+        border-radius:0 0 12px 12px;
+        background: #191e25;
+        box-shadow: 0 4px 8px 2px rgba(0, 5, 13, .5);
+    }
+    .hoverUser .flexs{
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        color: #aaa;
+    }
+    .hoverUser .flexs span.title{
+        font-size: 20px;
+        color: #fff;
+        font-style: bold;
+        font-weight: 700;
+        padding: 12px 0;
+    }
+    .hoverUser .flexs .suaConta{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 245px;
+        padding: 12px 0 12px 24px;
+    }
+    .hoverUser .flexs .suaConta ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    .hoverUser .flexs .suaConta ul li{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0 12px;
+        height: 49px;
+        width: 100%;
+    }
+    .hoverUser .flexs .suaConta ul li a{
+        text-decoration: none;
+        font-style: bold;
+        font-weight: 600;
+        padding: 12px 0;
+        width: 100%;
+    }
+
+
+    .hoverUser .flexs .perfis{
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+        padding: 12px 24px;
+    }
+    .hoverUser .flexs .perfis ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    .add{
+        display: grid;
+        place-content: center;
+        height: 100%;
+    }
+    .hoverUser .flexs .perfis span.addPerfil{
+        display: grid;
+        place-content: center;
+        background: rgba(99, 99, 99, .5);
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        padding: 0;
+    }
+    .hoverUser .flexs .perfis ul li{
+        padding: 12px;
+        width: 100%;
+    }
+    .hoverUser .flexs .perfis ul li.flexLi{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        height: 64px;
+    }
+    .hoverUser .flexs .perfis ul li.flexLi span.add span.addPerfil i{
+        font-size: 30px;
+    }
+    .hoverUser .flexs .perfis ul li.flexLi img{
+        height: 48px;
+        width: 48px;
+    }
+    .hoverUser .flexs ul li a{
+        font-style: bold;
+        width: 100%;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+        color: #aaa;
+    }
+    .hoverUser .flexs ul li:hover{
+        background: #fff;
+        border-radius: 12px;
+    }
+
+
+    .hoverUser .flexs ul li:hover > span a{
+        color: #333;
+    }
+    .hoverUser .flexs ul li:hover > a{
+        color: #333;
+    }
+    .hoverUser .flexs ul li:hover > span i{
+        color: #333;
+    }
+
+
+
+    .user:hover ~ .hoverUser, .hoverUser:hover{
+        display: block;
+        background: #191e25;
+    }
+    .conta:has(.hoverUser:hover).conta .user{
+        background: #191e25;
+    }
+
+
+/* FINAL CONTA MENU HOVER */
+
+
+
+.main{
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: end;
+    padding-left: 72px;
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, .1), 
+    rgba(0, 0, 0, .3), rgba(0, 0, 0, .5), rgba(0, 0, 0, .7));
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    width: 850px;
+    margin-bottom: 100px;
+}
+
+
+.temporada{
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 16px;
+}
+
+
+.sinopse{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 550;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+
+.status{
+    display: flex;
+    align-items: center;
+    height: 33px;
+    margin-bottom: 16px;
+}
+.status span.padrao{
+    font-size: 20px;
+    color: #999;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.status span.x-ray{
+    color: #fff;
+    font-weight: 600;
+    height: 22px;
+    padding: 3px 7px;
+    border-radius: 4px;
+    background: #33373d;
+    margin-right: 4px;
+}
+.status span img{
+    height: 33px;
+    width: 33;
+    margin-right: 4px;
+}
+.status i{
+    font-size: 16px;
+    color: #fff;
+    background: #33373d;
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+
+.categoria{
+    display: flex;
+    margin-bottom: 16px;
+}
+.categoria a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.categoria span{
+    background: #aaa;
+    height: 5px;
+    width: 5px;
+    margin: 6px 8px 0 8px;
+    border-radius: 50%;
+}
+
+
+.incluido{
+    display: flex;
+    height: 25px;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.incluido span{
+    display: grid;
+    place-content: center;
+    height: 25px;
+}
+.incluido span i{
+    color: #3a86ff;
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+
+.midia{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+
+/* EFEITOS HOVER BOTÃO PLAY E STATUS DO EP */
+
+    .midia .assistir{
+        display: flex;
+        align-items: center;
+    }
+    .play{
+        transition: all 200ms ease;
+    }
+    .midia .assistir:hover > .play{
+        transform: scale(1.1);    
+        transition: all 200ms ease;
+    }
+    .midia .assistir:hover > .play i{
+        color: #444;
+    }
+    .midia .assistir:hover > .statusEp{
+        color: #fff;
+    }
+    
+/* FINAL EFEITOS HOVER BOTÃO PLAY E STATUS DO EP */
+
+.midia span.play{
+    display: grid;
+    place-content: center;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 18px;
+}
+.midia span.play i{
+   font-size: 70px;
+   margin-left: 8px;
+}
+.midia span.statusEp{
+    color: #e6e6e6;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 38px;
+}
+.midia span.socialBtns{
+    display: grid;
+    place-content: center;
+    height: 61px;
+    width: 61px;
+    background: #ffffff33;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.midia span.socialBtns i{
+    color: #fff;
+    font-size: 33px;
+}
+
+
+/* EFEITOS HOVER BOTÕES SOCIAIS */
+
+    .midia .socialBtnBox .socialBtns:hover > i{
+        color: #000;
+    }
+
+    .midia .socialBtnBox{
+        position: relative;
+        display: grid;
+        place-content: center;
+        margin-left: 18px;
+    }
+    .socialBtnBox .socialBtns:hover{
+        transform: scale(1.15);
+        background: #fff;
+        transition: all 200ms ease;
+    }
+    .socialBtnBox .socialBtns::before{
+        content: '';
+        background: #fff;
+        height: max-content;
+        width: max-content;
+        border-radius: 8px;
+        text-align: center;
+        position: absolute;
+        top: -8px;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #333;
+        opacity: 0;
+    }
+    .socialBtnBox .socialBtns:hover::before{
+        content: '';
+        top: -42px;
+        padding: 8px 12px;
+        transition: 350ms;
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+    .socialBtnBox .plusBtn:hover::before{
+        content: 'Lista';
+    }
+    .socialBtnBox .likeBtn:hover::before{
+        content: 'Curtir';
+    }
+    .socialBtnBox .dislikeBtn:hover::before{
+        content: 'Não tenho interesse';
+    }
+    .socialBtnBox .downloadBtn:hover::before{
+        content: 'Baixar Episódio 01';
+    }
+    .socialBtnBox .partyBtn:hover::before{
+        content: 'Watch Party';
+    }
+    .socialBtnBox .shareBtn:hover::before{
+        content: 'Compartilhar';
+    }
+
+/* FINAL EFEITOS HOVER BOTÕES SOCIAIS */
+
