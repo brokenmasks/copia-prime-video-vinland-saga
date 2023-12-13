@@ -1,6 +1,7 @@
-![thor](https://github.com/brokenmasks/copia-prime-video-vinland-saga/assets/152626265/1b20f47c-99cd-40ed-abad-267d2d0495c9)
-
+<h1>Vinland Saga</h1>
 
 
 O site não está responsivo :(
 Esse projeto foi mais um teste de habilidade em relação a posicionamento de elementos na tela!
+
+![image](https://github.com/brokenmasks/copia-prime-video-vinland-saga/assets/152626265/c861e006-4cac-42a6-97b0-116bbd9bf5d3)
